@@ -1,0 +1,303 @@
+/* GLOBAL RESET + BASE */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181c23;
+    color: #f1f1f1;
+    margin: 0;
+}
+
+header {
+    background: #232834;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    color: #f1f1f1;
+    font-size: 2.5em;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* PROJETS */
+.projets {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.ligne-projet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.ligne-projet.inverse {
+    flex-direction: row-reverse;
+}
+
+/* BLOCS PROJET */
+.projet-photo,
+.projet-description {
+    background: #232834;
+    border: 2px solid #31394a;
+    border-radius: 10px;
+    padding: 30px 25px;
+    flex: 1 1 45%;
+    min-width: 280px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.projet-photo {
+    align-items: center;
+    justify-content: center;
+}
+
+.projet-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #232834;
+    border: 1px solid #31394a;
+}
+
+.projet-description h2 {
+    margin-top: 0;
+    color: #f1f1f1;
+}
+
+.tech {
+    margin-top: auto;
+    font-style: italic;
+    color: #6bb6ff;
+    margin-bottom: 10px;
+}
+
+.btn-github {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 22px;
+    background-color: #24292e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.2s, transform 0.15s;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-github:hover {
+    background-color: #0366d6;
+    transform: translateY(-2px) scale(1.04);
+}
+
+/* PROJET DETAILS */
+.projet-details {
+    margin-top: 32px;
+    padding: 28px 30px;
+    background: #232834;
+    border: 2px solid #31394a;
+    border-radius: 10px;
+    color: #e3e3e3;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    font-size: 1.08em;
+}
+
+.projet-details h3 {
+    margin-top: 0;
+    color: #6bb6ff;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+}
+
+.projet-details ul {
+    margin: 18px 0 18px 20px;
+    padding-left: 18px;
+}
+
+.projet-details li {
+    margin-bottom: 7px;
+    line-height: 1.5;
+}
+
+/* SECTION À PROPOS & CONTACT */
+.a-propos, .contact {
+    background: #232834;
+    border: 2px solid #31394a;
+    border-radius: 10px;
+    padding: 35px 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+    margin-top: 40px;
+}
+
+.a-propos h2, .contact h2 {
+    color: #6bb6ff;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.a-propos-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.a-propos-content p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #e3e3e3;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.contact li {
+    margin-bottom: 18px;
+    font-size: 1.13em;
+}
+
+.contact a {
+    color: #6bb6ff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* ZOOM OVERLAY */
+.zoomable {
+    cursor: zoom-in;
+    transition: transform 0.2s;
+}
+
+.image-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.image-overlay img.overlay-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.close-overlay {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* SEPARATEUR */
+hr {
+    border: none;
+    border-top: 8px solid #31394a;
+    margin: 40px 0;
+    width: 95%;
+    align-self: center;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+footer {
+    background: #232834;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+/* MEDIA QUERIES */
+
+/* Écrans <= 800px */
+@media (max-width: 800px) {
+    .ligne-projet,
+    .ligne-projet.inverse {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .btn-github {
+        font-size: 1em;
+        padding: 12px 0;
+    }
+
+    .a-propos-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .a-propos, .contact {
+        padding: 20px 12px;
+    }
+
+    .projet-details {
+        padding: 20px 14px;
+        font-size: 1em;
+    }
+}
+
+/* Écrans très petits <= 500px */
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .btn-github {
+        font-size: 0.95em;
+    }
+
+    .projet-description h2 {
+        font-size: 1.3em;
+    }
+
+    .contact li, .contact h2, .a-propos h2 {
+        font-size: 1em;
+    }
+}

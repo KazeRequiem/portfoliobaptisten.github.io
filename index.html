@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+    </header>
+    <main>
+        <section class="projets">
+            <!-- Projet 1 -->
+            <div class="ligne-projet">
+                <div class="projet-description">
+                    <h2>Donjon d'Alibaba</h2>
+                    <p>Création d'un jeu vidéo type donjon tour par tour dans le thème de Naheulbeuk.</p>
+                    <p class="tech">Tech utilisées : C++, SFML, POO</p>
+                    <a href="https://github.com/ZeroOwari/POODonjonDalibaba" class="btn-github" target="_blank">Voir sur GitHub</a>
+                </div>
+                <div class="projet-photo">
+                    <img src="src/projet1.png" alt="Projet 1" class="zoomable">
+                </div>
+                <div class="image-overlay" id="imageOverlay">
+                    <span class="close-overlay" id="closeOverlay">&times;</span>
+                    <img class="overlay-img" id="overlayImg">
+                </div>
+            </div>
+            <div class="projet-details">
+                <h3>À propos de ce projet</h3>
+                <p>
+                    "Donjon d'Alibaba" est un jeu de rôle graphique humoristique développé en C++ avec la bibliothèque SFML. 
+                    Inspiré de l’univers décalé de Naheulbeuk, ce RPG propose au joueur de constituer une équipe de héros atypiques pour explorer un donjon truffé de monstres absurdes, de pièges loufoques et de trésors inutiles.
+                    Le projet met l’accent sur la programmation orientée objet et la conception logicielle avancée.
+                </p>
+                <ul>
+                    <li>Langage C++ : Maîtrise des concepts avancés de la POO (encapsulation, héritage, polymorphisme, classes abstraites, héritage multiple).</li>
+                    <li>Architecture logicielle : Conception UML (diagrammes de classes, de séquence, d’activité) et découpage modulaire du code.</li>
+                    <li>Gestion de projet : Utilisation de Git/GitHub pour le travail collaboratif (branches, merges, gestion des versions).</li>
+                    <li>Développement graphique : Création d’une interface interactive avec SFML.</li>
+                    <li>Tests unitaires : Validation des fonctionnalités principales (combat, gestion d’objets, progression des personnages).</li>
+                    <li>Expérience utilisateur : Gameplay fluide, interface inspirée des fiches de personnage JDR, journal de quêtes, gestion d’inventaire et de progression.</li>
+                </ul>
+                <p>
+                    Ce projet a permis de renforcer la maîtrise de la programmation orientée objet en C++, la gestion collaborative de code avec Git, ainsi que la conception et le développement d’interfaces graphiques interactives avec SFML.
+                </p>
+            </div>
+            <hr>
+            <!-- Projet 2 -->
+            <div class="ligne-projet inverse">
+                <div class="projet-description">
+                    <h2>Web4All</h2>
+                    <p>Le projet "Web4All" est une plateforme web collaborative permettant aux étudiants de rechercher, filtrer et postuler à des offres de stage centralisées, tout en facilitant la gestion des entreprises, des utilisateurs et des candidatures via une interface moderne et sécurisée.</p>
+                    <p class="tech">Tech utilisées : HTML5, CSS, JavaScript, Twig, PHP (PDO), MySQL</p>
+                    <a href="https://github.com/KazeRequiem/ChercheStage-App-Client" class="btn-github" target="_blank">Voir sur GitHub (Frontend)</a>
+                    <a href="https://github.com/KazeRequiem/ChercheStage-API-Serveur" class="btn-github" target="_blank">Voir sur GitHub (Backend)</a>
+                    <a href="https://web4all.alwaysdata.net/" class="btn-github" target="_blank">Accéder au site</a>
+                </div>
+                <div class="projet-photo">
+                    <img src="src/projet2.png" alt="Projet 2" class ="zoomable">
+                </div>
+            </div>
+            <div class="projet-details">
+                <h3>À propos de ce projet</h3>
+                <p>
+                    Ce projet web vise à centraliser les offres de stage sur une plateforme unique afin de faciliter la recherche et la gestion des candidatures pour les étudiants.
+                    Il permet de regrouper les offres, de gérer les entreprises et les utilisateurs (administrateurs, pilotes, étudiants), de filtrer les offres par compétences, de postuler en ligne (CV et lettre de motivation), de suivre les candidatures, et d’offrir une expérience utilisateur responsive.
+                    Le projet est structuré en deux parties principales :
+                </p>
+                <ul>
+                    <li>MVC (Frontend) : Gestion de l’interface utilisateur et du rendu des vues avec HTML, CSS et JavaScript</li>
+                    <li>API (Backend) : Logique métier, gestion des données et sécurité via des middlewares et PDO</li>
+                </ul>
+                <p>
+                    Ce projet a permis de renforcer la maîtrise du développement web fullstack, de la conception d’architectures sécurisées en PHP/MVC, et de la gestion collaborative de projet en équipe.
+                </p>
+            </div>
+            <hr>
+            <!-- Projet 3 -->
+            <div class="ligne-projet">
+                <div class="projet-description">
+                    <h2>Décompilation de Super Mario Galaxy 2</h2>
+                    <p>Décompilation et conversion en C++ du code assembleur de Super Mario Galaxy 2 afin de documenter et préserver la logique interne du jeu et son moteur.</p>
+                    <p class="tech">Tech utilisées : Assembleur, C++</p>
+                    <a href="https://github.com/EltyDev/Garigari" class="btn-github" target="_blank">Voir sur GitHub</a>
+                </div>
+                <div class="projet-photo">
+                    <img src="src/projet3.png" alt="Projet 3" class ="zoomable">
+                </div>
+            </div>
+            <div class="projet-details">
+                <h3>À propos de ce projet</h3>
+                <p>
+                    Ce projet consiste en la décompilation en cours du jeu vidéo classique Super Mario Galaxy 2.
+                    L’objectif est d’analyser et de comprendre le code assembleur du jeu afin d’en extraire la logique de gameplay, la gestion des ressources et les mécanismes internes du moteur.
+                    Le code assembleur est progressivement converti en C++ tout en préservant fidèlement le comportement original du jeu.
+                </p>
+                <ul>
+                    <li>Analyse approfondie du code assembleur d’un jeu commercial</li>
+                    <li>Compréhension et documentation des systèmes internes (gameplay, moteur, ressources)</li>
+                    <li>Conversion structurée du code assembleur en C++ lisible et maintenable</li>
+                    <li>Utilisation d’outils de build multiplateformes (ninja, wine/wibo) et de scripts Python pour l’automatisation</li>
+                    <li>Diffing automatique entre le code d’origine et le code reconstruit pour garantir la fidélité du portage</li>
+                </ul>
+                <p>
+                    Ce projet a permis de renforcer la compréhension des architectures logicielles de jeux vidéo, la rétro-ingénierie, la manipulation d’outils de build multiplateformes, ainsi que la traduction fidèle de code bas niveau en C++.
+                </p>
+            </div>
+            <hr>
+            <!-- Projet 4 -->
+            <div class="ligne-projet inverse">
+                <div class="projet-description">
+                    <h2>Calculatrice en JavaScript</h2>
+                    <p>Développement d’une calculatrice web interactive en JavaScript, permettant d’effectuer des opérations arithmétiques de base avec une interface simple et une gestion des erreurs.</p>
+                    <p class="tech">Tech utilisées : HTML5, CSS, JavaScript</p>
+                    <a href="https://github.com/KazeRequiem/CalculatriceJs" class="btn-github" target="_blank">Voir sur GitHub</a>
+                </div>
+                <div class="projet-photo">
+                    <img src="src/projet4.png" alt="Projet 4" class ="zoomable">
+                </div>
+            </div>
+            <div class="projet-details">
+                <h3>À propos de ce projet</h3>
+                <p>
+                    Ce projet consiste en la réalisation d’une calculatrice web simple, développée en JavaScript, permettant d’effectuer les opérations arithmétiques de base : addition, soustraction, multiplication et division.
+                    L’interface utilisateur est intuitive et réactive, offrant un affichage clair des résultats et une gestion des erreurs de calcul.
+                </p>
+                <ul>
+                    <li>Interface utilisateur simple et ergonomique</li>
+                    <li>Affichage dynamique des résultats</li>
+                    <li>Bouton de réinitialisation pour effacer l’écran</li>
+                    <li>Prise en charge des erreurs de calcul (affichage d’un message d’erreur en cas d’opération invalide)</li>
+                </ul>
+                <p>
+                    Ce projet a permis de renforcer la maîtrise du DOM, la gestion des événements en JavaScript, ainsi que la conception d’interfaces web interactives et ergonomiques.
+                </p>
+            </div>
+            <hr>
+            <!-- Projet 5 -->
+            <div class="ligne-projet">
+                <div class="projet-description">
+                    <h2>Jeu de la Vie de Conway</h2>
+                    <p>Développement en Python d’une simulation console du Jeu de la Vie de Conway, affichant l’évolution d’une grille de cellules selon des règles d’automate cellulaire.</p>
+                    <p class="tech">Tech utilisées : Python</p>
+                    <a href="https://github.com/KazeRequiem/JeuDeLaVie" class="btn-github" target="_blank">Voir sur GitHub</a>
+                </div>
+                <div class="projet-photo">
+                    <img src="src/projet5.gif" alt="Projet 5" class ="zoomable">
+                </div>
+            </div>
+            <div class="projet-details">
+                <h3>À propos de ce projet</h3>
+                <p>
+                    Ce projet consiste en l’implémentation du Jeu de la Vie de John Conway, un automate cellulaire où chaque cellule d’une grille évolue selon des règles précises de naissance, de survie et de mort.
+                    Le programme, développé en Python, permet de générer une grille initiale aléatoire ou vide, puis de visualiser l’évolution du système au fil des générations directement dans le terminal.
+                </p>
+                <ul>
+                    <li>Génération d’une grille vide ou aléatoire avec un taux de remplissage configurable</li>
+                    <li>Calcul automatique des voisins pour chaque cellule, gestion complète des bords et coins</li>
+                    <li>Application des règles du Jeu de la Vie pour déterminer l’état futur de la grille</li>
+                    <li>Affichage en temps réel de l’évolution de la grille sur plusieurs générations dans la console</li>
+                </ul>
+                <p>
+                    Ce projet a permis de renforcer la logique algorithmique, la gestion de structures de données en Python, la modélisation de systèmes dynamiques, et l’affichage interactif en console.
+                </p>
+            </div>
+            <hr>
+            <!-- Projet 6 -->
+            <div class="ligne-projet inverse">
+                <div class="projet-description">
+                    <h2>Station météo</h2>
+                    <p>Développement d’un système embarqué sur Arduino permettant de mesurer et d’afficher en temps réel des données environnementales (température, humidité, pression, luminosité, GPS), avec gestion multi-modes, configuration dynamique et sauvegarde des paramètres.</p>
+                    <p class="tech">Tech utilisées : C, Arduino</p>
+                    <a href="https://github.com/KazeRequiem/StationMeteo" class="btn-github" target="_blank">Voir sur GitHub</a>
+                </div>
+                <div class="projet-photo">
+                    <img src="src/projet6.png" alt="Projet 6" class ="zoomable">
+                </div>
+            </div>
+            <div class="projet-details">
+                <h3>À propos de ce projet</h3>
+                <p>
+                    Ce projet consiste en la conception et la programmation d’un système embarqué à l’aide d’une carte Arduino.
+                    L’objectif était de réaliser un dispositif capable de collecter, traiter et afficher des données issues de différents capteurs (température, humidité, pression, luminosité, GPS),
+                    tout en offrant plusieurs modes de fonctionnement (standard, configuration, maintenance, économique) et une gestion avancée des interactions utilisateur via des boutons et des LED RGB.
+                </p>
+                <ul>
+                    <li>Conception du circuit électronique : Sélection et câblage des capteurs (BME280, capteur de luminosité, GPS), boutons poussoirs et LED RGB sur une carte Arduino.</li>
+                    <li>Programmation embarquée : Développement en langage C Arduino pour gérer la lecture des capteurs, l’affichage des données, la gestion des modes, l’enregistrement des paramètres en EEPROM, et la communication série.</li>
+                    <li>Gestion des modes : Passage entre les différents modes via appui court ou long sur les boutons, avec indication visuelle par LED.</li>
+                </ul>
+                <p>
+                    Ce projet a permis de renforcer la maîtrise de la conception de circuits électroniques, la programmation de systèmes embarqués en C Arduino, la gestion de capteurs et d’interfaces utilisateur, ainsi que l’optimisation de la mémoire et de la robustesse logicielle.
+                </p>
+            </div>
+        </section>
+        <!-- Section À propos de moi -->
+        <section class="a-propos">
+            <h2>À propos de moi</h2>
+            <div class="a-propos-content">
+                <p>
+                    Passionné par le développement web et les nouvelles technologies, je suis toujours à la recherche de nouveaux défis à relever. 
+                    Curieux, rigoureux et créatif, j'aime concevoir des solutions innovantes et apprendre en continu. 
+                    Mon objectif est de contribuer à des projets ambitieux tout en développant mes compétences techniques et humaines.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Me contacter -->
+        <section class="contact">
+            <h2>Me contacter</h2>
+            <ul>
+                <li><strong>Email :</strong> <a href="baptistenoisette1212@gmail.com">baptistenoisette1212@gmail.com</a></li>
+                <li><strong>Téléphone :</strong> 07 60 55 44 32</li>
+                <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/baptistenoisette" target="_blank">linkedin.com/in/baptistenoisette</a></li>
+                <li><strong>GitHub :</strong> <a href="https://github.com/KazeRequiem" target="_blank">github.com/KazeRequiem</a></li>
+                <li><strong>Disponibilité :</strong> 6 Octobre 2025</li>
+                <li><strong>Mobilité :</strong> Hauts-de-France, Centre-Val de Loire</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Portfolio de Baptiste Noisette</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>

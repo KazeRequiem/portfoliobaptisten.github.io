@@ -1,0 +1,2348 @@
+@font-face {
+    font-family: 'Gotham Knights';
+    src: url('./fonts/GothamKnights-nRoEP.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Knights Condense Italic';
+    src: url('./fonts/GothamKnightsCondenseItalic-Yze0o.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #282E3C;
+}
+
+header {
+    font-family: 'Gotham Knights', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2vw;
+}
+
+header .trapeze {
+    background: #ffea00;
+    clip-path: polygon(0% 35%, 100% 20%, 95% 85%, 5% 75%);
+    padding: 10px 0;
+    width: 47vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_bar_hero {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar_hero .black_polygone_1 {
+    background: #242424;
+    clip-path: polygon(15% 35%, 90% 25%, 80% 85%, 5% 75%);
+    width: 12vw;
+    height: 12vh;
+}
+
+.nav_bar_hero .black_polygone_2 {
+    background: #242424;
+    clip-path: polygon(10% 25%, 90% 25%, 85% 80%, 5% 90%);
+    width: 12vw;
+    height: 12vh;
+}
+
+.nav_bar_hero .black_polygone_3 {
+    background: #242424;
+    clip-path: polygon(15% 27%, 85% 15%, 95% 85%, 20% 85%);
+    width: 12vw;
+    height: 12vh;
+}
+
+
+.nav_bar_hero li .a_lien_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.9vw;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 0.4vh;
+}
+
+.nav_bar_hero li .a_lien_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.9vw;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 0.2vh;
+}
+
+.nav_bar_hero li .a_lien_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.9vw;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 0.2vh;
+    padding-left: 0.4vw;
+}
+
+/* Menu mobile par défaut hors écran */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* commence hors écran */
+    width: 70vw;
+    height: 100vh;
+    background-color: #242424;
+    z-index: 999;
+    padding-top: 15vh;
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+}
+
+.mobile-menu li a {
+    color: white;
+    font-size: 6vw;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Quand actif : visible */
+.mobile-menu.active {
+    right: 0;
+}
+
+.burger {
+    display: none;
+    font-size: 8vw;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+        margin-left: auto;
+        margin-right: 4vw;
+    }
+
+    .trapeze,
+    .menu {
+        display: none;
+    }
+
+    .nav_bar_hero {
+        flex-direction: column;
+        background-color: #242424;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70vw;
+        height: 100vh;
+        padding-top: 15vh;
+        gap: 4vh;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .nav_bar_hero.active {
+        right: 0;
+    }
+
+    .nav_bar_hero li {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_bar_hero a {
+        font-size: 6vw;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .black_polygone_1,
+    .black_polygone_2,
+    .black_polygone_3 {
+        clip-path: none;
+        background: transparent;
+        width: 100%;
+        height: auto;
+    }
+
+    header .trapeze {
+        display: none;
+    }
+}
+
+
+
+
+main{
+    padding-top: 15vh;
+}
+
+main .presentation_content{
+    padding-top: 11vh;
+
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.presentation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-image {
+    position: absolute;
+    top: -8vh;
+    left: 12vw;
+    width: 40vw;
+    z-index: 2;
+}
+
+.presentation .box1{
+    background : #ffea00;
+    clip-path: polygon(0 7%, 85% 7%, 100% 73%, 15% 72%);
+    width: 85vw;
+    height: 50vh;
+}
+
+.presentation .box2{
+    clip-path: polygon(4% 13%, 80% 15%, 93% 72%, 18% 71%);
+    background: #242424;
+    width: 87vw;
+    height: 47vh;
+}
+
+
+
+/* Ajustements pour les petits écrans (mobiles) */
+@media screen and (max-width: 320px) {
+    .presentation .box1 {
+        clip-path: polygon(0 7%, 95% 7%, 100% 85%, 5% 85%);
+        height: 65vh;
+        width: 95vw;
+    }
+
+    .presentation .box2 {
+        clip-path: polygon(4% 13%, 90% 15%, 96% 85%, 8% 85%);
+        height: 60vh;
+        width: 97vw;
+    }
+
+    main .presentation_content {
+        font-size: 0.60rem;
+        padding-top: 12vh;
+    }
+
+    main{
+        padding-top :0;
+    }
+
+    .box-image {
+        top: 2.6vh;
+        left: 5vw;
+        width: 65vw;
+    }
+}
+
+
+.avatar-trapeze {
+    clip-path: polygon(0 0, 100% 3%, 83% 100%, 12% 100%);
+    background: #242424;
+    width: 25vw;
+    height: 55vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.avatar-image {
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+
+.avatar-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 7vw;
+    margin-bottom: 8vh;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.button-wrapper {
+    position: relative;
+    width: 10vw;
+    height: 7vh;
+}
+
+.button-contact {
+    position: absolute;
+    all: unset;
+    background-color: #242424;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 4vh;
+    height: 7vh;
+    width: 12vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.button-cv{
+    position: absolute;
+    all: unset;
+    background-color: #505C7C;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 4vh;
+    height: 7vh;
+    width: 12vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.button-contact:hover {
+    background-color: #3a3a3a;
+}
+
+.button-cv:hover {
+    background-color: #3a3a3a;
+}
+
+.button-trapeze {
+    position: absolute;
+    bottom: 1vh;
+    left: 3.2vw;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(42% 21%, 100% 6%, 89% 89%, 31% 98%);
+    background: #ffea00;
+    z-index: -1;
+}
+
+.projet-title{
+    font-family: 'Gotham Knights Condense Italic', sans-serif;
+    color: white;
+    font-size: 13vh;
+    padding-top: 8vh;
+    padding-left: 8vw;
+    margin-top: 0;
+}
+
+
+.projet-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.trapeze-container {
+
+    position: relative;
+    width: 47vw;
+    height: 18vh;
+    margin-bottom: 1.5vh;
+}
+
+.trapeze-title-1, .sub-trapeze-title-1,
+.trapeze-title-2, .sub-trapeze-title-2,
+.trapeze-title-3, .sub-trapeze-title-3,
+.trapeze-title-4, .sub-trapeze-title-4,
+.trapeze-title-5, .sub-trapeze-title-5,
+.trapeze-title-6, .sub-trapeze-title-6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Trapeze 1 */
+.trapeze-title-1 {
+    clip-path: polygon(14% 31%, 73% 39%, 75% 75%, 15% 82%);
+    background: #1E1E1E;
+    z-index: 2;
+    top: 0.1vh;
+    left : 1vw
+}
+.sub-trapeze-title-1 {
+    clip-path: polygon(14% 19%, 73% 39%, 75% 75%, 20% 81%);
+    background: #ffea00;
+    z-index: 1;
+    left : 0vw
+}
+
+/* Trapeze 2 - forme différente */
+.trapeze-title-2 {
+    clip-path: polygon(10% 25%, 80% 35%, 70% 80%, 18% 90%);
+    background: #1E1E1E;
+    z-index: 2;
+    top: 1vh;
+    left : 3vw;
+}
+.sub-trapeze-title-2 {
+    clip-path: polygon(12% 15%, 78% 32%, 72% 85%, 22% 92%);
+    background: #ffea00;
+    z-index: 1;
+    left : 1.5vw;
+}
+
+/* Trapeze 3 - forme différente */
+.trapeze-title-3 {
+    clip-path: polygon(18% 28%, 75% 30%, 78% 78%, 20% 85%);
+    background: #1E1E1E;
+    z-index: 2;
+    top: 1vh;
+    right : 6vw;
+}
+.sub-trapeze-title-3 {
+    clip-path: polygon(20% 18%, 73% 28%, 76% 82%, 25% 89%);
+    background: #ffea00;
+    z-index: 1;
+}
+
+/* Trapeze 4 - nouvelle forme */
+.trapeze-title-4 {
+    clip-path: polygon(12% 22%, 85% 30%, 80% 85%, 18% 88%);
+    background: #1E1E1E;
+    z-index: 2;
+    top: 1.7vh;
+    left : 0vw;
+}
+.sub-trapeze-title-4 {
+    clip-path: polygon(15% 12%, 82% 28%, 78% 90%, 22% 95%);
+    background: #ffea00;
+    z-index: 1;
+    top : 0.1vh ;
+    left : 0vw;
+}
+
+/* Trapeze 5 - nouvelle forme */
+.trapeze-title-5 {
+    clip-path: polygon(20% 20%, 80% 25%, 85% 80%, 25% 85%);
+    background: #1E1E1E;
+    z-index: 2;
+    top: 1.7vh;
+    left: 0.2vw;
+}
+.sub-trapeze-title-5 {
+    clip-path: polygon(23% 10%, 78% 22%, 82% 88%, 28% 93%);
+    background: #ffea00;
+    z-index: 1;
+}
+
+/* Trapeze 6 - nouvelle forme */
+.trapeze-title-6 {
+    clip-path: polygon(20% 20%, 80% 25%, 85% 80%, 25% 85%);
+    background: #1E1E1E;
+    z-index: 2;
+    top: 1.8vh;
+    left: 1.8vw;
+}
+.sub-trapeze-title-6 {
+    clip-path: polygon(23% 10%, 78% 22%, 82% 88%, 28% 93%);
+    background: #ffea00;
+    z-index: 1;
+    left: 1vw;
+}
+
+.trapeze-title-1, .trapeze-title-2, .trapeze-title-3, .trapeze-title-4, .trapeze-title-5, .trapeze-title-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trapeze-title-4 h2{
+    font-size: 3vw;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 2vh;
+    padding-right: 3vw;
+}
+
+.trapeze-title-1, .trapeze-title-2, .trapeze-title-3, .trapeze-title-4, .trapeze-title-5, .trapeze-title-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.trapeze-title-1 h2,
+.trapeze-title-2 h2,
+.trapeze-title-3 h2,
+.trapeze-title-4 h2,
+.trapeze-title-5 h2,
+.trapeze-title-6 h2 {
+    font-size: 3vw;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.trapeze-title-1 h2 {
+    transform: translate(-3vw, 0.7vh);
+}
+
+.trapeze-title-2 h2 {
+    transform: translate(-2vw, 0.7vh);
+}
+
+.trapeze-title-3 h2 {
+    transform: translate(-1.5vw, 0.7vh);
+    font-size: 2.5vw;
+}
+
+.trapeze-title-4 h2 {
+    transform: translate(-0.3vw, 0.7vh);
+}
+
+.trapeze-title-5 h2 {
+    transform: translate(0.7vw, 0.7vh);
+}
+
+.trapeze-title-6 h2 {
+    transform: translate(0.5vw, 0.7vh);
+}
+
+
+.projets-row {
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 2vh;
+}
+
+.projets-row .trapeze-container {
+    margin-bottom: 0;
+}
+
+
+
+.donjon-image{
+    width: 40%;
+    height: auto ;
+    display: flex;
+}
+
+.projet1-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.web4all-image{
+    width: 65%;
+    height: auto ;
+    display: flex;
+}
+
+.projet2-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.decompil-image{
+    margin-top: 4vh;
+    width: 85%;
+    height: auto ;
+    display: flex;
+}
+
+.projet3-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.calc-image{
+    margin-top: 4vh;
+    width: 63%;
+    height: auto ;
+    display: flex;
+}
+
+.projet4-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.jdlv-image{
+    margin-top: 4vh;
+    width: 63.5%;
+    height: auto ;
+    display: flex;
+}
+
+.projet5-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.stationmeteo-image{
+    margin-top: 4vh;
+    width: 63.5%;
+    height: auto ;
+    display: flex;
+}
+
+.projet6-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.projet1 {
+    position: relative;
+}
+
+.projet1-trapeze {
+    position: absolute;
+    top: 11vh;
+    left: 30vw;
+    width: 45%;
+    height: 100%;
+    clip-path: polygon(7% 19%, 86% 15%, 91% 90%, 12% 89%);
+    background: #242424;
+    z-index: 1;
+}
+
+.projet2 {
+    position: relative;
+}
+
+.projet2-trapeze {
+    position: absolute;
+    top: 8vh;
+    left: 8.5vw;
+    width: 86%;
+    height: 100%;
+    clip-path: polygon(14% 11%, 88% 25%, 86% 87%, 13% 94%);
+    background: #242424;
+    z-index: 1;
+}
+
+.projet3 {
+    position: relative;
+}
+
+.projet3-trapeze {
+    position: absolute;
+    top: 9vh;
+    left: 3.5vw;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(22% 23%, 90% 21%, 86% 94%, 23% 89%);
+    background: #242424;
+    z-index: 1;
+}
+
+.projet4 {
+    position: relative;
+}
+
+.projet4-trapeze {
+    position: absolute;
+    top: 8vh;
+    left: -5vw;
+    width: 110%;
+    height: 110%;
+    clip-path: polygon(22% 23%, 84% 22%, 82% 81%, 25% 87%);
+    background: #242424;
+    z-index: 1;
+}
+
+.projet5 {
+    position: relative;
+}
+
+.projet5-trapeze {
+    position: absolute;
+    top: 18vh;
+    left: 8.5vw;
+    width: 86%;
+    height: 100%;
+    clip-path: polygon(22% 23%, 88% 21%, 82% 81%, 22% 85%);
+    background: #242424;
+    z-index: 1;
+}
+
+.projet6 {
+    position: relative;
+}
+
+.projet6-trapeze {
+    position: absolute;
+    top: 16vh;
+    left: 1.5vw;
+    width: 100%;
+    height: 105%;
+    clip-path: polygon(22% 23%, 85% 22%, 82% 83%, 23% 79%);
+    background: #242424;
+    z-index: 1;
+}
+
+.info-bulle1 {
+    position: absolute;
+    top: 80vh;
+    left : 67vw;
+    z-index: 10;
+    max-width: 300px; /* ou une valeur adaptée à ton design */
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.bulle1-image{
+    width: 15%;
+    height: auto;
+}
+
+.info-bulle2 {
+    position: absolute;
+    top: 78vh;
+    left : 79vw;
+    z-index: 10;
+    max-width: 300px; /* ou une valeur adaptée à ton design */
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.bulle2-image{
+    width: 20%;
+    height: auto;
+}
+
+.info-bulle3 {
+    position: absolute;
+    top: 90vh;
+    left : 44vw;
+    z-index: 10;
+    max-width: 300px; /* ou une valeur adaptée à ton design */
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.bulle3-image{
+    width: 60%;
+    height: auto;
+}
+
+.info-bulle3 {
+    position: absolute;
+    top: 90vh;
+    left : 44vw;
+    z-index: 10;
+}
+
+.bulle3-image{
+    width: 60%;
+    height: auto;
+}
+
+.info-bulle4 {
+    position: absolute;
+    top: 88vh;
+    left : 37vw;
+    z-index: 10;
+    max-width: 300px; /* ou une valeur adaptée à ton design */
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.bulle4-image{
+    width: 35%;
+    height: auto;
+}
+
+.info-bulle5 {
+    position: absolute;
+    top: 92vh;
+    left : 78vw;
+    z-index: 10;
+    max-width: 300px; /* ou une valeur adaptée à ton design */
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.bulle5-image{
+    width: 18%;
+    height: auto;
+}
+
+.info-bulle6 {
+    position: absolute;
+    top: 94vh;
+    left : 78vw;
+    z-index: 10;
+    max-width: 300px; /* ou une valeur adaptée à ton design */
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.bulle6-image{
+    width: 18%;
+    height: auto;
+}
+
+.panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100%;
+    background: #111;
+    color: white;
+    border-left: 12px solid #ffd800;
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    font-family: 'Arial Black', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.panel.show {
+    right: 0;
+}
+
+.panel-content {
+    padding: 30px 25px 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-height: 100%;
+    overflow : visible;
+}
+
+.panel h3 {
+    font-size: 1.6rem;
+    color: #ffd800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.panel p {
+    margin-bottom: 1em;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.panel ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1em;
+}
+
+.panel ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.panel ul li::before {
+    content: '★';
+    color: #ffd800;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+}
+
+.close-panel {
+    position: absolute;
+    top: 15px;
+    right: 20px; /* Valeur actuelle */
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffd800;
+    background: none;
+    border: none;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.close-panel:hover {
+    color: white;
+}
+
+
+.bulle1-image {
+    cursor: pointer;
+}
+
+.bulle2-image {
+    cursor: pointer;
+}
+
+.bulle3-image {
+    cursor: pointer;
+}
+
+.bulle4-image {
+    cursor: pointer;
+}
+
+.bulle5-image {
+    cursor: pointer;
+}
+
+.bulle6-image {
+    cursor: pointer;
+}
+
+.github-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.github-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffd800;
+    color: #111;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Arial Black', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.github-link a:hover {
+    background-color: #fff200;
+    transform: translateY(-2px);
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.github-bubble {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.github-bubble a {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffd800;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1rem;
+    position: relative;
+    box-shadow: 3px 3px 0 #000;
+    gap: 10px;
+    transition: transform 0.2s;
+}
+
+.github-bubble a::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #ffd800;
+    z-index: 1;
+}
+
+
+.github-bubble a:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0 #000;
+}
+
+.github-bubble img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Styles améliorés pour le panneau de contact */
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+    filter: invert(80%) sepia(70%) saturate(1000%) hue-rotate(360deg) brightness(105%) contrast(105%);
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+}
+
+/* Nouvelle section des réseaux sociaux sans fond jaune */
+.social-links {
+    margin: 40px 0;
+    padding: 20px 0;
+    border-top: 1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.social-links h4 {
+    color: #ffd800;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    /* Pas de filtre par défaut */
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+/* Style amélioré pour le formulaire */
+.contact-form {
+    margin-top: 40px;
+    background-color: rgba(36, 36, 36, 0.6);
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #ffd800;
+}
+
+.contact-form h4 {
+    color: #ffd800;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #3a3a3a;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffd800;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 216, 0, 0.3);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #242424;
+    color: white;
+    border: 2px solid #ffd800;
+    padding: 14px 28px;
+    font-weight: bold;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #ffd800;
+    color: #111;
+    transform: translateY(-2px);
+}
+
+.send-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Animation pour l'ouverture du panneau */
+.panel {
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.panel.show {
+    transform: translateX(0);
+}
+
+/* Styles responsifs pour le panneau de contact */
+@media (max-width: 768px) {
+    .contact-item {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .contact-icon {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    
+    .social-icons {
+        gap: 20px;
+    }
+    
+    .social-icon img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 400px) and (max-width: 420px) {
+    .presentation .box1 {
+        clip-path: polygon(0 7%, 95% 7%, 100% 85%, 5% 85%);
+        height: 65vh;
+        width: 95vw;
+    }
+
+    .presentation .box2 {
+        clip-path: polygon(4% 13%, 90% 15%, 96% 85%, 8% 85%);
+        height: 60vh;
+        width: 97vw;
+    }
+
+    main .presentation_content {
+        font-size: 0.90rem;
+        padding-top: 11.5vh;
+    }
+
+    main{
+        padding-top :0;
+    }
+
+    .box-image {
+        top: 3.5vh;
+        left: 5vw;
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+        .presentation .box1 {
+        clip-path: polygon(0 7%, 95% 7%, 100% 85%, 5% 85%);
+        height: 65vh;
+        width: 95vw;
+    }
+
+    .presentation .box2 {
+        clip-path: polygon(4% 13%, 90% 15%, 96% 85%, 8% 85%);
+        height: 60vh;
+        width: 97vw;
+    }
+
+    main .presentation_content {
+        font-size: 0.90rem;
+        padding-top: 11vh;
+    }
+
+    main{
+        padding-top :0;
+    }
+
+    .box-image {
+        top: 3.5vh;
+        left: 5vw;
+        width: 65vw;
+    }
+
+    .avatar-trapeze {
+    clip-path: polygon(0 0, 100% 3%, 83% 100%, 12% 100%);
+    background: #242424;
+    width: 55vw;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+    .avatar-image {
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    }
+
+    .button-contact {
+    position: absolute;
+    all: unset;
+    background-color: #242424;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+    .button-cv{
+    position: absolute;
+    all: unset;
+    background-color: #505C7C;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+
+    .avatar-section{
+        gap:0;
+        justify-content: flex-start;
+        margin-left: 10vw;
+    }
+
+    .button-trapeze {
+    position: absolute;
+    bottom: 1vh;
+    left: 17vw;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(42% 21%, 100% 6%, 89% 89%, 31% 98%);
+    background: #ffea00;
+    z-index: -1;
+    }
+    .projets-row {
+    display: block;
+    gap: 2vw;
+    margin-bottom: 2vh;
+    }
+
+    .trapeze-container {
+    position: relative;
+    margin-bottom: 1.5vh;
+    width: 85vw;
+    height: 20vh;
+    margin-left: -12vw;
+    }
+
+    .sub-trapeze-title-3{
+        width: 130%;
+    }
+
+    .trapeze-title-3{
+        width: 130%;
+    }
+
+    .trapeze-title-1 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-2 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-3 h2{
+        font-size: 6.5vw;
+        margin-right:0vw
+    }
+    .trapeze-title-4 h2{
+        font-size: 8vw;
+        margin-right:0vw
+    }
+    .trapeze-title-5 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+    .trapeze-title-6 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+
+    .projet1-trapeze{
+        width: 95%;
+        left:15vw;
+        top:13vh;
+        height: 80%;
+    }
+    .donjon-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle1-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle1 {
+    top: 48vh;
+    left: 80vw;
+    }
+
+    .projet2-trapeze{
+        width: 95%;
+        left:15vw;
+        top:17vh;
+        height: 60%;
+    }
+    .web4all-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle2-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle2 {
+    top: 37vh;
+    left: 80vw;
+    }
+
+    .projet3-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .decompil-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle3-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle3 {
+    top: 50vh;
+    left: 80vw;
+    }
+
+    .projet4-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .calc-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle4-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle4 {
+    top: 63vh;
+    left: 80vw;
+    }
+
+    .projet5-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .jdlv-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle5-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle5 {
+    top: 43vh;
+    left: 80vw;
+    }
+
+    .projet6-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .stationmeteo-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle6-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle6 {
+    top: 43vh;
+    left: 80vw;
+    }
+
+    .close-panel {
+        right: 50px; /* Réduire la distance par rapport au bord droit */
+        top: 10px;
+    }
+    
+    .panel-content {
+        padding: 30px 15px 40px; /* Réduire le padding horizontal */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .panel {
+        width: 95%; /* Réduire légèrement la largeur du panneau */
+    }
+    
+    /* Assurer que le contenu du panneau ne déborde pas */
+    .panel h3, .panel p, .panel ul, .panel li {
+        max-width: 90%;
+        word-wrap: break-word;
+    }
+    
+    /* Ajuster les bulles GitHub pour qu'elles ne débordent pas */
+    .github-bubble a {
+        max-width: 90%;
+        white-space: normal;
+    }
+
+    
+}
+
+@media screen and (max-width: 420px) {
+        .presentation .box1 {
+        clip-path: polygon(0 7%, 95% 7%, 100% 85%, 5% 85%);
+        height: 65vh;
+        width: 95vw;
+    }
+
+    .presentation .box2 {
+        clip-path: polygon(4% 13%, 90% 15%, 96% 85%, 8% 85%);
+        height: 60vh;
+        width: 97vw;
+    }
+
+    main .presentation_content {
+        font-size: 0.85rem;
+        padding-top: 11vh;
+    }
+
+    main{
+        padding-top :0;
+    }
+
+    .box-image {
+        top: 3.5vh;
+        left: 5vw;
+        width: 65vw;
+    }
+
+    .avatar-trapeze {
+    clip-path: polygon(0 0, 100% 3%, 83% 100%, 12% 100%);
+    background: #242424;
+    width: 55vw;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+    .avatar-image {
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    }
+
+    .button-contact {
+    position: absolute;
+    all: unset;
+    background-color: #242424;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+    .button-cv{
+    position: absolute;
+    all: unset;
+    background-color: #505C7C;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+
+    .avatar-section{
+        gap:0;
+        justify-content: flex-start;
+        margin-left: 10vw;
+    }
+
+    .button-trapeze {
+    position: absolute;
+    bottom: 1vh;
+    left: 17vw;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(42% 21%, 100% 6%, 89% 89%, 31% 98%);
+    background: #ffea00;
+    z-index: -1;
+    }
+    .projets-row {
+    display: block;
+    gap: 2vw;
+    margin-bottom: 2vh;
+    }
+
+    .trapeze-container {
+    position: relative;
+    margin-bottom: 1.5vh;
+    width: 85vw;
+    height: 20vh;
+    margin-left: -12vw;
+    }
+    .trapeze-title-1 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-2 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-3 h2{
+        font-size: 5vw;
+        margin-right:0vw
+    }
+    .trapeze-title-4 h2{
+        font-size: 8vw;
+        margin-right:0vw
+    }
+    .trapeze-title-5 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+    .trapeze-title-6 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+}
+
+@media screen and (max-width: 400px) {
+        .presentation .box1 {
+        clip-path: polygon(0 7%, 95% 7%, 100% 85%, 5% 85%);
+        height: 65vh;
+        width: 95vw;
+    }
+
+    .presentation .box2 {
+        clip-path: polygon(4% 13%, 90% 15%, 96% 85%, 8% 85%);
+        height: 60vh;
+        width: 97vw;
+    }
+
+    main .presentation_content {
+        font-size: 0.85rem;
+        padding-top: 11vh;
+    }
+
+    main{
+        padding-top :0;
+    }
+
+    .box-image {
+        top: 3.5vh;
+        left: 5vw;
+        width: 65vw;
+    }
+
+    .avatar-trapeze {
+    clip-path: polygon(0 0, 100% 3%, 83% 100%, 12% 100%);
+    background: #242424;
+    width: 55vw;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+    .avatar-image {
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    }
+
+    .button-contact {
+    position: absolute;
+    all: unset;
+    background-color: #242424;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+    .button-cv{
+    position: absolute;
+    all: unset;
+    background-color: #505C7C;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+
+    .avatar-section{
+        gap:0;
+        justify-content: flex-start;
+        margin-left: 10vw;
+    }
+
+    .button-trapeze {
+    position: absolute;
+    bottom: 1vh;
+    left: 17vw;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(42% 21%, 100% 6%, 89% 89%, 31% 98%);
+    background: #ffea00;
+    z-index: -1;
+    }
+    .projets-row {
+    display: block;
+    gap: 2vw;
+    margin-bottom: 2vh;
+    }
+
+    .trapeze-container {
+    position: relative;
+    margin-bottom: 1.5vh;
+    width: 85vw;
+    height: 20vh;
+    margin-left: -12vw;
+    }
+    .trapeze-title-1 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-2 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-3 h2{
+        font-size: 5vw;
+        margin-right:0vw
+    }
+    .trapeze-title-4 h2{
+        font-size: 8vw;
+        margin-right:0vw
+    }
+    .trapeze-title-5 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+    .trapeze-title-6 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .presentation .box1 {
+        clip-path: polygon(0 7%, 95% 7%, 100% 85%, 5% 85%);
+        height: 65vh;
+        width: 95vw;
+    }
+
+    .presentation .box2 {
+        clip-path: polygon(4% 13%, 90% 15%, 96% 85%, 8% 85%);
+        height: 60vh;
+        width: 97vw;
+    }
+
+    main .presentation_content {
+        font-size: 0.65rem;
+        padding-top: 13vh;
+    }
+
+    main{
+        padding-top :0;
+    }
+
+    .box-image {
+        top: 2.6vh;
+        left: 5vw;
+        width: 65vw;
+    }
+
+    .avatar-trapeze {
+    clip-path: polygon(0 0, 100% 3%, 83% 100%, 12% 100%);
+    background: #242424;
+    width: 55vw;
+    height: 38vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+    .avatar-image {
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    }
+
+    .button-contact {
+    position: absolute;
+    all: unset;
+    background-color: #242424;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+    .button-cv{
+    position: absolute;
+    all: unset;
+    background-color: #505C7C;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+
+    .avatar-section{
+        gap:0;
+        justify-content: flex-start;
+        margin-left: 10vw;
+    }
+
+    .button-trapeze {
+    position: absolute;
+    bottom: 1vh;
+    left: 17vw;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(42% 21%, 100% 6%, 89% 89%, 31% 98%);
+    background: #ffea00;
+    z-index: -1;
+    }
+    .projets-row {
+    display: block;
+    gap: 2vw;
+    margin-bottom: 2vh;
+    }
+
+    .trapeze-container {
+    position: relative;
+    margin-bottom: 1.5vh;
+    width: 85vw;
+    height: 20vh;
+    margin-left: -12vw;
+    }
+    .trapeze-title-1 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-2 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-3 h2{
+        font-size: 5vw;
+        margin-right:0vw
+    }
+    .trapeze-title-4 h2{
+        font-size: 8vw;
+        margin-right:0vw
+    }
+    .trapeze-title-5 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+    .trapeze-title-6 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+
+    .projet1-trapeze{
+        width: 95%;
+        left:15vw;
+        top:13vh;
+        height: 80%;
+    }
+    .donjon-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle1-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle1 {
+    top: 55vh;
+    left: 80vw;
+    }
+
+    .projet2-trapeze{
+        width: 95%;
+        left:15vw;
+        top:17vh;
+        height: 60%;
+    }
+    .web4all-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle2-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle2 {
+    top: 37vh;
+    left: 80vw;
+    }
+
+    .projet3-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .decompil-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle3-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle3 {
+    top: 57vh;
+    left: 80vw;
+    }
+
+    .projet4-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .calc-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle4-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle4 {
+    top: 72vh;
+    left: 80vw;
+    }
+
+    .projet5-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .jdlv-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle5-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle5 {
+    top: 48vh;
+    left: 80vw;
+    }
+
+    .projet6-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .stationmeteo-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle6-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle6 {
+    top: 48vh;
+    left: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .presentation .box1 {
+        clip-path: polygon(0 7%, 95% 7%, 100% 85%, 5% 85%);
+        height: 65vh;
+        width: 95vw;
+    }
+
+    .presentation .box2 {
+        clip-path: polygon(4% 13%, 90% 15%, 96% 85%, 8% 85%);
+        height: 60vh;
+        width: 97vw;
+    }
+
+    main .presentation_content {
+        font-size: 0.75rem;
+        padding-top: 11vh;
+    }
+
+    main{
+        padding-top :0;
+    }
+
+    .box-image {
+        top: 3.5vh;
+        left: 5vw;
+        width: 65vw;
+    }
+
+    .avatar-trapeze {
+    clip-path: polygon(0 0, 100% 3%, 83% 100%, 12% 100%);
+    background: #242424;
+    width: 55vw;
+    height: 38vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+    .avatar-image {
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    }
+
+    .button-contact {
+    position: absolute;
+    all: unset;
+    background-color: #242424;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+    .button-cv{
+    position: absolute;
+    all: unset;
+    background-color: #505C7C;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+
+    .avatar-section{
+        gap:0;
+        justify-content: flex-start;
+        margin-left: 10vw;
+    }
+
+    .button-trapeze {
+    position: absolute;
+    bottom: 1vh;
+    left: 17vw;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(42% 21%, 100% 6%, 89% 89%, 31% 98%);
+    background: #ffea00;
+    z-index: -1;
+    }
+    .projets-row {
+    display: block;
+    gap: 2vw;
+    margin-bottom: 2vh;
+    }
+
+    .trapeze-container {
+    position: relative;
+    margin-bottom: 1.5vh;
+    width: 85vw;
+    height: 20vh;
+    margin-left: -12vw;
+    }
+    .trapeze-title-1 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-2 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-3 h2{
+        font-size: 5vw;
+        margin-right:0vw
+    }
+    .trapeze-title-4 h2{
+        font-size: 8vw;
+        margin-right:0vw
+    }
+    .trapeze-title-5 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+    .trapeze-title-6 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+
+    .projet1-trapeze{
+        width: 95%;
+        left:15vw;
+        top:13vh;
+        height: 80%;
+    }
+    .donjon-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle1-image {
+    width: 100%;
+    height: auto;
+    }
+    .info-bulle1 {
+    top: 50vh;
+    left: 85vw;
+    }
+
+    .projet2-trapeze{
+        width: 95%;
+        left:15vw;
+        top:17vh;
+        height: 60%;
+    }
+    .web4all-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle2-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle2 {
+    top: 37vh;
+    left: 80vw;
+    }
+
+    .projet3-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .decompil-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle3-image {
+    width: 100%;
+    height: auto;
+    }
+    .info-bulle3 {
+    top: 52vh;
+    left: 85vw;
+    }
+
+    .projet4-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .calc-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle4-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle4 {
+    top: 65vh;
+    left: 80vw;
+    }
+
+    .projet5-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .jdlv-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle5-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle5 {
+    top: 44vh;
+    left: 80vw;
+    }
+
+    .projet6-trapeze{
+        width: 95%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .stationmeteo-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle6-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle6 {
+    top: 44vh;
+    left: 80vw;
+    }
+    
+}

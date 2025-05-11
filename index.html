@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Baptiste</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="trapeze">
+            <nav class="menu">
+                <ul class="nav_bar_hero">
+                    <li class="black_polygone_1"><a class="a_lien_1" href="https://kazerequiem.github.io/portfoliobaptisten.github.io/">Accueil</a></li>
+                    <li class="black_polygone_2"><a class="a_lien_2" href="#projet">Projets</a></li>
+                    <li class="black_polygone_3"><a class="a_lien_3" href="#" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="mobile-menu">
+        <ul>
+            <li><a href="https://kazerequiem.github.io/portfoliobaptisten.github.io/">Accueil</a></li>
+            <li><a href="#projet">Projets</a></li>
+            <li><a href="#" id="mobile-contact">Contact</a></li>
+        </ul>
+        </nav>
+        <button class="burger" aria-label="Menu">
+            ☰
+        </button>
+    </header>
+
+    <main>
+        <div class="presentation">
+            <img src="src/presentation.png" alt="Titre Présentation" class="box-image" />
+            <div class="box1">
+                <div class="box2">
+                    <h1 class="presentation_content">
+                        Je m’appelle Baptiste Noisette, étudiant en deuxième année d’école d’ingénieur en informatique. Passionné par le développement et les nouvelles technologies, je suis toujours en quête de nouveaux défis à relever. Curieux, rigoureux et créatif, j’aime concevoir des solutions innovantes tout en continuant à apprendre chaque jour. Actuellement, je suis à la recherche d’une alternance de 3 ans pour consolider mes compétences en développement tout en contribuant à des projets ambitieux au sein d’une équipe stimulante.
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class = "avatar-section">
+            <div class = "avatar">
+                <div class = "avatar-trapeze">
+                    <img src="src/photo_baptiste.png" alt="Avatar" class="avatar-image" />
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="button-wrapper">
+                    <div class="button-trapeze"></div>
+                    <button class="button-contact" id="contact-button">Me contacter</button>
+                </div>
+                <div class="button-wrapper">
+                    <div class="button-trapeze"></div>
+                    <a href="assets/CV_Baptiste_Noisette.pdf" download class="button-cv">Mon CV</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="projet-section" id ="projet">
+            <h1 class="projet-title">Mes projets</h1>
+            <div class="projet1">
+                <div class="trapeze-container" style="--trapeze-width: 35vw; --trapeze-height: 20vh;">
+                    <div class="sub-trapeze-title-1"></div>
+                    <div class="trapeze-title-1">
+                        <h2>Donjon d'Alibaba</h2>
+                    </div>
+                </div>
+                <div class="projet1-trapeze"></div>
+                <div class = "projet1-image">
+                    <img src="src/projet1-image.gif" alt="Donjon d'Alibaba" class="donjon-image">
+                </div>
+                <div class = "info-bulle1" data-panel="panel1">
+                    <img src = "src/bulle.png" alt = "info-bulle" class = "bulle1-image">
+                </div>
+                <div id="panel1" class="panel hidden">
+                    <div class="panel-content">
+                        <span class="close-panel">&times;</span>
+                        <h3>Détails du projet : Donjon d'Alibaba</h3>
+                        <p>
+                        "Donjon d'Alibaba" est un jeu de rôle graphique humoristique développé en C++ avec la bibliothèque SFML. 
+                        Inspiré de l’univers décalé de Naheulbeuk, ce RPG propose au joueur de constituer une équipe de héros atypiques pour explorer un donjon truffé de monstres absurdes, de pièges loufoques et de trésors inutiles.
+                        Le projet met l’accent sur la programmation orientée objet et la conception logicielle avancée.
+                        </p>
+                        <ul>
+                            <li>Langage C++ : Maîtrise des concepts avancés de la POO (encapsulation, héritage, polymorphisme, classes abstraites, héritage multiple).</li>
+                            <li>Architecture logicielle : Conception UML (diagrammes de classes, de séquence, d’activité) et découpage modulaire du code.</li>
+                            <li>Gestion de projet : Utilisation de Git/GitHub pour le travail collaboratif (branches, merges, gestion des versions).</li>
+                            <li>Développement graphique : Création d’une interface interactive avec SFML.</li>
+                            <li>Tests unitaires : Validation des fonctionnalités principales (combat, gestion d’objets, progression des personnages).</li>
+                            <li>Expérience utilisateur : Gameplay fluide, interface inspirée des fiches de personnage JDR, journal de quêtes, gestion d’inventaire et de progression.</li>
+                        </ul>
+                        <p>
+                            Ce projet a permis de renforcer la maîtrise de la programmation orientée objet en C++, la gestion collaborative de code avec Git, ainsi que la conception et le développement d’interfaces graphiques interactives avec SFML.
+                        </p>
+                        <div class="github-bubble">
+                            <a href="https://github.com/ZeroOwari/POODonjonDalibaba" target="_blank">
+                                <span>Voir sur GitHub</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet2">
+                <div class="trapeze-container" style="--trapeze-width: 25vw; --trapeze-height: 15vh;">
+                    <div class="sub-trapeze-title-2"></div>
+                    <div class="trapeze-title-2">
+                        <h2>Web4All</h2>
+                    </div>
+                </div>
+                <div class="projet2-trapeze"></div>
+                <div class = "projet2-image">
+                    <img src="src/projet2-image.gif" alt="Web4All" class="web4all-image">
+                </div>
+                <div class = "info-bulle2" data-panel="panel2">
+                    <img src = "src/bulle.png" alt = "info-bulle" class = "bulle2-image">
+                </div>
+                <div id="panel2" class="panel hidden">
+                    <div class="panel-content">
+                        <span class="close-panel">&times;</span>
+                        <h3>Détails du projet : Web4All</h3>
+                        <p>
+                            Ce projet web vise à centraliser les offres de stage sur une plateforme unique afin de faciliter la recherche et la gestion des candidatures pour les étudiants.
+                            Il permet de regrouper les offres, de gérer les entreprises et les utilisateurs (administrateurs, pilotes, étudiants), de filtrer les offres par compétences, de postuler en ligne (CV et lettre de motivation), de suivre les candidatures, et d’offrir une expérience utilisateur responsive.
+                            Le projet est structuré en deux parties principales :
+                        </p>
+                        <ul>
+                            <li>MVC (Frontend) : Gestion de l’interface utilisateur et du rendu des vues avec HTML, CSS et JavaScript</li>
+                            <li>API (Backend) : Logique métier, gestion des données et sécurité via des middlewares et PDO</li>
+                        </ul>
+                        <p class="tech">Tech utilisées : HTML5, CSS, JavaScript, Twig, PHP (PDO), MySQL</p>
+                        <p>
+                            Ce projet a permis de renforcer la maîtrise du développement web fullstack, de la conception d’architectures sécurisées en PHP/MVC, et de la gestion collaborative de projet en équipe.
+                        </p>
+                        <div class="github-bubble">
+                            <a href="https://github.com/KazeRequiem/ChercheStage-App-Client" target="_blank">
+                                <span>Voir sur GitHub (Frontend)</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+                            </a>
+                        </div>
+                        <div class="github-bubble">
+                            <a href="https://github.com/KazeRequiem/ChercheStage-API-Serveur" target="_blank">
+                                <span>Voir sur GitHub (Backend)</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets-row">
+                <div class = "projet3">
+                    <div class="trapeze-container" style="--trapeze-width: 55vw; --trapeze-height: 20vh;">
+                        <div class="sub-trapeze-title-3"></div>
+                        <div class="trapeze-title-3">
+                            <h2>Décompil. de Super Mario Galaxy 2</h2>
+                        </div>
+                    </div>
+                    <div class="projet3-trapeze"></div>
+                    <div class = "projet3-image">
+                        <img src="src/projet3-image.png" alt="decompil" class="decompil-image">
+                    </div>
+                    <div class = "info-bulle3" data-panel="panel3">
+                        <img src = "src/bulle.png" alt = "info-bulle" class = "bulle3-image">
+                    </div>
+                    <div id="panel3" class="panel hidden">
+                    <div class="panel-content">
+                        <span class="close-panel">&times;</span>
+                        <h3>Détails du projet : Décompilation du jeu Super Mario Galaxy 2</h3>
+                        <p>
+                            Ce projet consiste en la décompilation en cours du jeu vidéo classique Super Mario Galaxy 2.
+                            L’objectif est d’analyser et de comprendre le code assembleur du jeu afin d’en extraire la logique de gameplay, la gestion des ressources et les mécanismes internes du moteur.
+                            Le code assembleur est progressivement converti en C++ tout en préservant fidèlement le comportement original du jeu.
+                        </p>
+                        <ul>
+                            <li>Analyse approfondie du code assembleur d’un jeu commercial</li>
+                            <li>Compréhension et documentation des systèmes internes (gameplay, moteur, ressources)</li>
+                            <li>Conversion structurée du code assembleur en C++ lisible et maintenable</li>
+                            <li>Utilisation d’outils de build multiplateformes (ninja, wine/wibo) et de scripts Python pour l’automatisation</li>
+                            <li>Diffing automatique entre le code d’origine et le code reconstruit pour garantir la fidélité du portage</li>
+                        </ul>
+                        <p class="tech">Tech utilisées : Assembleur, C++</p>
+                        <p>
+                            Ce projet a permis de renforcer la compréhension des architectures logicielles de jeux vidéo, la rétro-ingénierie, la manipulation d’outils de build multiplateformes, ainsi que la traduction fidèle de code bas niveau en C++.
+                        </p>
+                        <div class="github-bubble">
+                            <a href="https://github.com/EltyDev/Garigari" target="_blank">
+                                <span>Voir sur GitHub</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class = "projet4">
+                    <div class="trapeze-container" style="--trapeze-width: 30vw; --trapeze-height: 20vh;">
+                        <div class="sub-trapeze-title-4"></div>
+                        <div class="trapeze-title-4">
+                            <h2>Calculatrice en JS</h2>
+                        </div>
+                    </div>
+                    <div class="projet4-trapeze"></div>
+                    <div class = "projet4-image">
+                        <img src="src/projet4-image.png" alt="calc" class="calc-image">
+                    </div>
+                    <div class = "info-bulle4" data-panel="panel4">
+                        <img src = "src/bulle.png" alt = "info-bulle" class = "bulle4-image">
+                    </div>
+                    <div id="panel4" class="panel hidden">
+                    <div class="panel-content">
+                        <span class="close-panel">&times;</span>
+                        <h3>Détails du projet : Calculatrice en JavaScript</h3>
+                        <p>
+                            Ce projet consiste en la réalisation d’une calculatrice web simple, développée en JavaScript, permettant d’effectuer les opérations arithmétiques de base : addition, soustraction, multiplication et division.
+                            L’interface utilisateur est intuitive et réactive, offrant un affichage clair des résultats et une gestion des erreurs de calcul.
+                        </p>
+                        <ul>
+                            <li>Interface utilisateur simple et ergonomique</li>
+                            <li>Affichage dynamique des résultats</li>
+                            <li>Bouton de réinitialisation pour effacer l’écran</li>
+                            <li>Prise en charge des erreurs de calcul (affichage d’un message d’erreur en cas d’opération invalide)</li>
+                        </ul>
+                        <p class="tech">Tech utilisées : HTML5, CSS, JavaScript</p>
+                        <p>
+                            Ce projet a permis de renforcer la maîtrise du DOM, la gestion des événements en JavaScript, ainsi que la conception d’interfaces web interactives et ergonomiques.
+                        </p>
+                        <div class="github-bubble">
+                            <a href="https://github.com/KazeRequiem/CalculatriceJs" target="_blank">
+                                <span>Voir sur GitHub</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="projet5">
+                <div class="trapeze-container" style="--trapeze-width: 45vw; --trapeze-height: 20vh;">
+                    <div class="sub-trapeze-title-5"></div>
+                    <div class="trapeze-title-5">
+                        <h2>Jeu de la Vie de Conway</h2>
+                    </div>
+                </div>
+                <div class="projet5-trapeze"></div>
+                <div class = "projet5-image">
+                    <img src="src/projet5-image.gif" alt="jdlv" class="jdlv-image">
+                </div>
+                <div class = "info-bulle5" data-panel="panel5">
+                    <img src = "src/bulle.png" alt = "info-bulle" class = "bulle5-image">
+                </div>
+                <div id="panel5" class="panel hidden">
+                    <div class="panel-content">
+                        <span class="close-panel">&times;</span>
+                        <h3>Détails du projet : Jeu de la Vie de Conway</h3>
+                        <p>
+                            Ce projet consiste en l’implémentation du Jeu de la Vie de John Conway, un automate cellulaire où chaque cellule d’une grille évolue selon des règles précises de naissance, de survie et de mort.
+                            Le programme, développé en Python, permet de générer une grille initiale aléatoire ou vide, puis de visualiser l’évolution du système au fil des générations directement dans le terminal.
+                        </p>
+                        <ul>
+                            <li>Génération d’une grille vide ou aléatoire avec un taux de remplissage configurable</li>
+                            <li>Calcul automatique des voisins pour chaque cellule, gestion complète des bords et coins</li>
+                            <li>Application des règles du Jeu de la Vie pour déterminer l’état futur de la grille</li>
+                            <li>Affichage en temps réel de l’évolution de la grille sur plusieurs générations dans la console</li>
+                        </ul>
+                        <p class="tech">Tech utilisées : Python</p>
+                        <p>
+                            Ce projet a permis de renforcer la logique algorithmique, la gestion de structures de données en Python, la modélisation de systèmes dynamiques, et l’affichage interactif en console.
+                        </p>
+                        <div class="github-bubble">
+                            <a href="https://github.com/KazeRequiem/JeuDeLaVie" target="_blank">
+                                <span>Voir sur GitHub</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="projet6">
+                <div class="trapeze-container" style="--trapeze-width: 28vw; --trapeze-height: 20vh;">
+                    <div class="sub-trapeze-title-6"></div>
+                    <div class="trapeze-title-6">
+                        <h2>Station météo</h2>
+                    </div>
+                </div>
+                <div class="projet6-trapeze"></div>
+                <div class = "projet6-image">
+                    <img src="src/projet6-image.png" alt="stationmeteo" class="stationmeteo-image">
+                </div>
+                <div class = "info-bulle6" data-panel="panel6">
+                    <img src = "src/bulle.png" alt = "info-bulle" class = "bulle6-image">
+                </div>
+                <div id="panel6" class="panel hidden">
+                    <div class="panel-content">
+                        <span class="close-panel">&times;</span>
+                        <h3>Détails du projet : Station Météo</h3>
+                        <p>
+                            Ce projet consiste en la conception et la programmation d’un système embarqué à l’aide d’une carte Arduino.
+                            L’objectif était de réaliser un dispositif capable de collecter, traiter et afficher des données issues de différents capteurs (température, humidité, pression, luminosité, GPS),
+                            tout en offrant plusieurs modes de fonctionnement (standard, configuration, maintenance, économique) et une gestion avancée des interactions utilisateur via des boutons et des LED RGB.
+                        </p>
+                        <ul>
+                            <li>Conception du circuit électronique : Sélection et câblage des capteurs (BME280, capteur de luminosité, GPS), boutons poussoirs et LED RGB sur une carte Arduino.</li>
+                            <li>Programmation embarquée : Développement en langage C Arduino pour gérer la lecture des capteurs, l’affichage des données, la gestion des modes, l’enregistrement des paramètres en EEPROM, et la communication série.</li>
+                            <li>Gestion des modes : Passage entre les différents modes via appui court ou long sur les boutons, avec indication visuelle par LED.</li>
+                        </ul>
+                        <p class="tech">Tech utilisées : C, Arduino</p>
+                        <p>
+                            Ce projet a permis de renforcer la maîtrise de la conception de circuits électroniques, la programmation de systèmes embarqués en C Arduino, la gestion de capteurs et d’interfaces utilisateur, ainsi que l’optimisation de la mémoire et de la robustesse logicielle.
+                        </p>
+                        <div class="github-bubble">
+                            <a href="https://github.com/KazeRequiem/StationMeteo" target="_blank">
+                                <span>Voir sur GitHub</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    <div id="contact-panel" class="panel hidden">
+        <div class="panel-content">
+            <span class="close-panel">&times;</span>
+            <h3>Me contacter</h3>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png"" alt="Email" class="contact-icon">
+                    <p>baptistenoisette1212@gmail.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Téléphone" class="contact-icon">
+                    <p>+33 7 60 55 44 32</p>
+                </div>
+                
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="Localisation" class="contact-icon">
+                    <p>Liévin / Orléans, France</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <h4>Retrouvez-moi sur</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/KazeRequiem" target="_blank" class="social-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/baptistenoisette/" target="_blank" class="social-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

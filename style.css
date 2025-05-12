@@ -2439,7 +2439,7 @@ main .presentation_content{
     
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) and (max-height: 850px) {
     .presentation .box1 {
         clip-path: polygon(0 7%, 95% 7%, 100% 85%, 5% 85%);
         height: 65vh;
@@ -2455,6 +2455,261 @@ main .presentation_content{
     main .presentation_content {
         font-size: 0.80rem;
         padding-top: 10vh;
+    }
+
+    main{
+        padding-top :0;
+    }
+
+    .box-image {
+        top: 3.5vh;
+        left: 5vw;
+        width: 65vw;
+    }
+
+    .avatar-trapeze {
+    clip-path: polygon(0 0, 100% 3%, 83% 100%, 12% 100%);
+    background: #242424;
+    width: 55vw;
+    height: 38vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+    .avatar-image {
+    width: 63vw;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    }
+
+    .button-contact {
+    position: absolute;
+    all: unset;
+    background-color: #242424;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 2.8vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+    .button-cv{
+    position: absolute;
+    all: unset;
+    background-color: #505C7C;
+    color: white;
+    font-family: 'Gotham Knights', sans-serif;
+    font-size: 3.5vh;
+    height: 7vh;
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    }
+
+    .avatar-section{
+        gap:0;
+        justify-content: flex-start;
+        margin-left: 10vw;
+    }
+
+    .button-trapeze {
+    position: absolute;
+    bottom: 1vh;
+    left: 17vw;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(42% 21%, 100% 6%, 89% 89%, 31% 98%);
+    background: #ffea00;
+    z-index: -1;
+    }
+    .projets-row {
+    display: block;
+    gap: 2vw;
+    margin-bottom: 2vh;
+    }
+
+    .trapeze-container {
+    position: relative;
+    margin-bottom: 1.5vh;
+    width: 85vw;
+    height: 12vh;
+    margin-left: -12vw;
+    }
+    .trapeze-title-1 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-2 h2{
+        font-size: 8vw;
+        margin-right:4vw
+    }
+    .trapeze-title-3 h2{
+        font-size: 5vw;
+        margin-right:0vw
+    }
+    .trapeze-title-4 h2{
+        font-size: 8vw;
+        margin-right:0vw
+    }
+    .trapeze-title-5 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+    .trapeze-title-6 h2{
+        font-size: 7vw;
+        margin-left:2.7vw
+    }
+
+    .projet1-trapeze{
+        width: 0%;
+        left:15vw;
+        top:13vh;
+        height: 80%;
+    }
+    .donjon-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle1-image {
+    width: 100%;
+    height: auto;
+    }
+    .info-bulle1 {
+    top: 42vh;
+    left: 85vw;
+    }
+
+    .projet2-trapeze{
+        width: 0%;
+        left:15vw;
+        top:17vh;
+        height: 60%;
+    }
+    .web4all-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle2-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle2 {
+    top: 30vh;
+    left: 80vw;
+    }
+
+    .projet3-trapeze{
+        width: 0%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .decompil-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle3-image {
+    width: 100%;
+    height: auto;
+    }
+    .info-bulle3 {
+    top: 42vh;
+    left: 85vw;
+    }
+
+    .projet4-trapeze{
+        width: 0%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .calc-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle4-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle4 {
+    top: 53vh;
+    left: 80vw;
+    }
+
+    .projet5-trapeze{
+        width: 0%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .jdlv-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle5-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle5 {
+    top: 37vh;
+    left: 80vw;
+    }
+
+    .projet6-trapeze{
+        width: 0%;
+        left:15vw;
+        top:25vh;
+        height: 60%;
+    }
+    .stationmeteo-image{
+        width: 90%;
+        left:9vw;
+    }
+    .bulle6-image {
+    width: 80%;
+    height: auto;
+    }
+    .info-bulle6 {
+    top: 38vh;
+    left: 80vw;
+    }
+    
+}
+
+@media screen and (max-width: 360px) and (max-height: 740px) {
+    .presentation .box1 {
+        clip-path: polygon(0 7%, 95% 7%, 100% 85%, 5% 85%);
+        height: 65vh;
+        width: 95vw;
+    }
+
+    .presentation .box2 {
+        clip-path: polygon(4% 13%, 90% 15%, 96% 85%, 8% 85%);
+        height: 60vh;
+        width: 97vw;
+    }
+
+    main .presentation_content {
+        font-size: 0.75rem;
+        padding-top: 11vh;
     }
 
     main{
@@ -2612,7 +2867,7 @@ main .presentation_content{
     height: auto;
     }
     .info-bulle2 {
-    top: 33vh;
+    top: 32vh;
     left: 80vw;
     }
 
@@ -2650,7 +2905,7 @@ main .presentation_content{
     height: auto;
     }
     .info-bulle4 {
-    top: 56vh;
+    top: 57vh;
     left: 80vw;
     }
 
@@ -2669,7 +2924,7 @@ main .presentation_content{
     height: auto;
     }
     .info-bulle5 {
-    top: 40vh;
+    top: 39vh;
     left: 80vw;
     }
 

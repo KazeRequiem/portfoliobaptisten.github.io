@@ -926,7 +926,7 @@ main .presentation_content{
 .close-panel {
     position: absolute;
     top: 15px;
-    right: 20px; /* Valeur actuelle */
+    right: 20px;
     font-size: 28px;
     cursor: pointer;
     color: #ffd800;
@@ -1509,12 +1509,12 @@ main .presentation_content{
     }
 
     .close-panel {
-        right: 50px; /* Réduire la distance par rapport au bord droit */
+        right: 80px; /* Réduire la distance par rapport au bord droit */
         top: 10px;
     }
     
     .panel-content {
-        padding: 30px 15px 40px; /* Réduire le padding horizontal */
+        padding: 50px 15px 40px; /* Réduire le padding horizontal */
         width: 100%;
         box-sizing: border-box;
     }
